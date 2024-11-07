@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "express node dev",
+        "program":"${workspaceFolder}",
+        "runtimeVersion": "20.18.0",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": [
+          "run",
+          "start"
+        ],
+        "env": {
+          "NODE_ENV": "development",
+          "PORT": "5000"
+        },
+        "console": "integratedTerminal",
+        "outputCapture": "std",
+        "skipFiles": ["<node_internals>/**"]
+      }
+    ]
+  }
+  
